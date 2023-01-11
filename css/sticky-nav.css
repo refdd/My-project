@@ -105,20 +105,22 @@ height: 50px;
   outline: none;
 }
 .numberControl{
-   font-family: 'Lato';
-font-style: normal;
-font-weight: 600;
-font-size: 10.8187px;
-line-height: 13px;
-text-decoration-line: underline;
-margin-bottom: 0;
-color: #0000EE;
-text-align: right;
-display: flex;
-align-items: center;
-gap: 4px;
-justify-content: end;
-padding: 9px 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.8187px;
+  line-height: 13px;
+  text-decoration-line: underline;
+  margin-bottom: 0;
+  color: #0000EE;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: end;
+  padding: 9px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 .condNumberConteiner label
 {
