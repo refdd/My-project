@@ -12,10 +12,12 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  
 }
 body{
  font-family: "Work Sans", sans-serif;
   ;
+  overflow-x: hidden;
 }
 .container{
   padding-left: 20px;
@@ -50,6 +52,7 @@ body{
     text-align: center;
     font-weight: 800;
     letter-spacing: -3px;
+    display: none;
 }
 .special-heading + p {
   margin: -30px;

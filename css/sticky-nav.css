@@ -1,0 +1,183 @@
+.callContainer{
+    width:  100%;
+    height: 50px;
+    background-color: #1EAFFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.callContainer.fixed{
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+.collAndNumber{
+    display: flex;
+    align-items: center;
+    padding: 0 8px ;
+    width: 100%;
+    justify-content: center;
+}
+.coll , .numberPhone{
+ width: 48%;
+ font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+text-decoration-line: underline;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+gap: 8px;
+cursor: pointer;
+}
+.coll img{
+ border: 1px solid #FFFFFF;;
+border-radius: 50%;
+padding: 4px;
+}
+.numberPhone{
+    padding-left: 40px;
+}
+.numberPhone a{
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.line{
+width: 1.5px ;
+background-color: #ffff;
+height: auto ;
+height: 50px;
+}
+.cellControl{
+    position: absolute;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    z-index: -2;
+    width: 70%;
+    left: 0;
+    top: -96px;
+    display: none;
+    transition: 0.9s;
+    transition-delay: 250ms;
+    transition-property: top;
+}
+.cellControl.active{
+  left: 0;
+  top: 48px;
+  z-index: 1;
+  display: block;
+}
+.control{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
+}
+.control input[type="text"] {
+    padding: 12px 8px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    width:90%;
+}
+.control input[type="text"]::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #C0C0C0;
+}
+.control input[type="text"]:focus {
+  outline: none;
+}
+.numberControl{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 10.8187px;
+line-height: 13px;
+/* identical to box height */
+
+text-decoration-line: underline;
+margin-bottom: 0;
+color: #0000EE;
+text-align: right;
+}
+.condNumberConteiner label
+{
+    font-size: 16px;
+    color: #777;
+    text-transform: capitalize;
+}
+.condNumberConteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 90%;
+  }
+  .inputNumberContainer{
+    display: flex;
+  }
+  .code{
+    width: 100px;
+    position: relative;
+  }
+  .code .ts-wrapper.single .ts-control, .ts-wrapper.single .ts-control input{
+    padding: 13px;
+    border-radius: 10px 0 0  10px ;
+  }
+  #select-code-ts-control::placeholder{
+    font-size: 14px !important;
+  }
+  #select-code-ts-control{
+    border: 1px solid #C4C4C4;
+  }
+  .codeImag{
+    position: absolute;
+    top: 12px;
+    right: 6px;
+    width: 23px;
+    height: 6px;
+    z-index: 7;
+  }
+  .codeImag img {
+    width: 100%;
+    height: auto;
+  }
+  .number {
+    flex: 1;
+  }
+  .number input[type="number"] {
+    padding: 13px 8px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+  border-left: 0;
+  }
+  /* media responsev  */
+@media screen and (min-width: 768px) {
+.callContainer {
+  height: 55px;
+}
+.coll, .numberPhone{
+  font-weight: bold;
+  justify-content: center;
+  width: 32%;
+  font-size: 20px;
+}
+.cellControl{
+  width: 485px;
+  top: 54px;
+}
+}
