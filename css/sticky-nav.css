@@ -105,17 +105,20 @@ height: 50px;
   outline: none;
 }
 .numberControl{
-    font-family: 'Lato';
+   font-family: 'Lato';
 font-style: normal;
 font-weight: 600;
 font-size: 10.8187px;
 line-height: 13px;
-/* identical to box height */
-
 text-decoration-line: underline;
 margin-bottom: 0;
 color: #0000EE;
 text-align: right;
+display: flex;
+align-items: center;
+gap: 4px;
+justify-content: end;
+padding: 9px 0;
 }
 .condNumberConteiner label
 {
@@ -133,7 +136,7 @@ text-align: right;
     display: flex;
   }
   .code{
-    width: 100px;
+    width: 95px;
     position: relative;
   }
   .code .ts-wrapper.single .ts-control, .ts-wrapper.single .ts-control input{
@@ -162,13 +165,23 @@ text-align: right;
     flex: 1;
   }
   .number input[type="number"] {
-    padding: 13px 8px;
+    padding: 12.8px 8px;
     border-radius: 8px;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 0 10px 10px 0;
     width: 100%;
   border-left: 0;
+  }
+  .number input[type="number"]::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #C0C0C0;
+  }
+  .number input[type="number"]:focus {
+ outline: none;
   }
   /* media responsev  */
 @media screen and (min-width: 768px) {
@@ -182,5 +195,8 @@ text-align: right;
 .cellControl{
   width: 485px;
   top: 54px;
+}
+.code{
+  width: 124px;
 }
 }
